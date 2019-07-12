@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro de Veiculo</h2>
+<form method="post" action="/veiculo/store">
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-categoria">Categoria</label>
+                <select class="form-control" name="categoria">
+                    <option disabled="disabled" selected="selected">Selecione uma categoria</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-modelo">Modelo</label>
+                <input type="text" name="modelo" id="campo-modelo" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="campo-preco">Preço</label>
+                <input type="text" name="preco" id="campo-preco" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+</form>
+
