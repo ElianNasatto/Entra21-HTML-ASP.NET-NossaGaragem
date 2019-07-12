@@ -11,6 +11,14 @@
                 <label for="campo-categoria">Categoria</label>
                 <select class="form-control" name="categoria">
                     <option disabled="disabled" selected="selected">Selecione uma categoria</option>
+                    
+                    @foreach (Model.Categoria categoria in ViewBag.Categorias)
+                    {
+                        <option value="@categoria.Id" >@categoria.Nome</option>
+                    }
+
+
+
                 </select>
             </div>
         </div>
@@ -29,7 +37,7 @@
         <div class="col-12">
             <div class="form-group">
                 <label for="campo-preco">Preço</label>
-                <input type="text" name="preco" id="campo-preco" class="form-control" />
+                <input type="text" name="valor" id="campo-preco" class="form-control" />
             </div>
         </div>
     </div>

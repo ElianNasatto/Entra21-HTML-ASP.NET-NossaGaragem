@@ -1,0 +1,6 @@
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\bin\Debug\Model.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\bin\Debug\Model.pdb
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\obj\Debug\Model.csprojAssemblyReference.cache
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\obj\Debug\Model.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Model\obj\Debug\Model.pdb

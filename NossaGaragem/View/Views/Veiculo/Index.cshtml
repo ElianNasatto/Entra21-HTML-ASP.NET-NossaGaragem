@@ -3,11 +3,11 @@
     ViewBag.Title = "Index";
 }
 
-<h3>Lista de Veiculos</h3>
+<h3 class="display-4 mt-3">Lista de Veiculos</h3>
 
 <div class="row mb-3">
     <div class="col-12">
-    <a href="/veiculo/cadastro" class="btn btn-primary float-right">
+    <a href="/veiculo/cadastro" class="btn btn-primary float-right mb-3">
         <i class="fas fa-plus"></i>Novo Veiculo
     </a>
     </div>
@@ -24,7 +24,19 @@
     </thead>
 
     <tbody>
-
+        @foreach (Model.Veiculo veiculo in ViewBag.Veiculos)
+        {
+        <tr>
+            <td>@veiculo.Id</td>
+            <td>@veiculo.Categoria.Nome</td>
+            <td>@veiculo.Modelo</td>
+            <td>@veiculo.Valor</td>
+            <td>
+            <a class="btn btn-secondary" href="/veiculo/alterar/?id=@veiculo.Id">Alterar</a>
+            <a class="btn btn-danger" href="/veiculo/apagar?id=@veiculo.Id">Apagar</a>
+            </td>
+        </tr>
+        }
 
     </tbody>
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace Repository
         public static SqlCommand Conectar()
         {
             SqlConnection conexao = new SqlConnection();
-            conexao.ConnectionString = @"";
+            conexao.ConnectionString = ConfigurationManager.ConnectionStrings["DefautConnection"].ConnectionString;
             conexao.Open();
 
             SqlCommand comando = new SqlCommand();

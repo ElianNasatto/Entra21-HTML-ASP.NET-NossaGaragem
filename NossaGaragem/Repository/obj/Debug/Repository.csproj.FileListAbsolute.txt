@@ -1,0 +1,9 @@
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Repository.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Repository.pdb
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Model.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Model.pdb
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csproj.CopyComplete
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.pdb

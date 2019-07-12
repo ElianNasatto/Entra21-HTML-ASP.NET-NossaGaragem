@@ -148,3 +148,7 @@ T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\obj\Debug\View.cspro
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\obj\Debug\View.csproj.CopyComplete
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\obj\Debug\View.dll
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\obj\Debug\View.pdb
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\bin\Model.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\bin\Repository.dll
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\bin\Model.pdb
+T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\View\bin\Repository.pdb
