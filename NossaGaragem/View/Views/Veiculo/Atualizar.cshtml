@@ -3,21 +3,24 @@
     ViewBag.Title = "Atualizar";
 }
 
-<h2>Atualizar</h2>
+<h2 class="display-4">Atualizar</h2>
 
 <form action="/veiculo/update" method="post">
-    <div>
-        <label for="campo-modelo">Modelo</label>
-        <input type="text" value="@ViewBag.Veiculo.Modelo" name="modelo"/>
-    </div>
-    <div>
-        <label for="campo-valor">Valor</label>
-        <input type="text" value="@ViewBag.Veiculo.Valor" name="valor"/>
-    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label class="form-check-label" for="campo-modelo">Modelo</label>
+                <input type="text" value="@ViewBag.Veiculo.Modelo" name="modelo" class="form-control" />
 
-    <div>
+                <label class="form-check-label" for="campo-valor">Valor</label>
+                <input type="text" value="@ViewBag.Veiculo.Valor" name="valor" class="form-control" />
+
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
         <label for="campo-categoria">Categoria</label>
-        <select name="categoria">
+        <select class="form-control" name="categoria">
             <option disabled="disabled" selected="selected">Selecione uma categoria</option>
 
             @foreach (Model.Categoria categoria in ViewBag.Categoria)
@@ -32,7 +35,9 @@
                 }
             }
         </select>
+        <button type="submit" class="btn btn-success mt-2">
+            <i class="fa fa-save"></i> Salvar
+        </button>
     </div>
-    <input type="text" hidden="hidden" value="@ViewBag.Veiculo.Id" name="id"/>
-    <button type="submit">Salvar</button>
+    <input type="text" hidden="hidden" value="@ViewBag.Veiculo.Id" name="id" />
 </form>
