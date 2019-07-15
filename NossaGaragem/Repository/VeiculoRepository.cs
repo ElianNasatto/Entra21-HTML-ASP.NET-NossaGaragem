@@ -69,7 +69,8 @@ namespace Repository
             SqlCommand comando = Conexao.Conectar();
             comando.CommandText = @"SELECT
                                     veiculos.modelo AS 'Modelo'
-FROM veiculos WHERE id = "
+FROM veiculos WHERE id = ";
+            return null;
         }
     }
 }

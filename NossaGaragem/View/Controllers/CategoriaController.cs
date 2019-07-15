@@ -32,11 +32,33 @@ namespace View.Controllers
             return View();
         }
 
+        public ActionResult Alterar(int id)
+        {
+            Categoria categoria = repository.ObterPeloId(id);
+            ViewBag.Categoria = categoria;
+            return View();
+        }
+
+        public ActionResult Update(int id,string nome)
+        {
+            Categoria categoria = new Categoria();
+            categoria.Id = (id);
+            categoria.Nome = nome;
+            repository.Alterar(categoria);
+            return RedirectToAction("Index");
+        }
+        
         public ActionResult Store(string nome)
         {
             Categoria categoria = new Categoria();
             categoria.Nome = nome;
             repository.Inserir(categoria);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Apagar(int id)
+        {
+            repository.Deletar(id);
             return RedirectToAction("Index");
         }
     }

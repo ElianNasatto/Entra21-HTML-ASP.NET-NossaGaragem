@@ -7,3 +7,12 @@ T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Mode
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csproj.CopyComplete
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.dll
 T:\Documentos\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.pdb
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.dll
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.pdb
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Repository.dll
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Repository.pdb
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Model.dll
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\bin\Debug\Model.pdb
+C:\Users\elian\Documents\GitHub\Entra21-NossaGaragem\NossaGaragem\Repository\obj\Debug\Repository.csproj.CopyComplete

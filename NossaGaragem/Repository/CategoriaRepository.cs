@@ -57,7 +57,27 @@ namespace Repository
             comando.CommandText = "UPDATE categorias SET nome = @NOME WHERE id = @ID";
             comando.Parameters.AddWithValue("@ID", categoria.Id);
             comando.Parameters.AddWithValue("@NOME", categoria.Nome);
+            comando.ExecuteNonQuery();
             comando.Connection.Close();
         }
+
+        public Categoria ObterPeloId(int id)
+        {
+            SqlCommand comando = Conexao.Conectar();
+            comando.CommandText = "SELECT * FROM categorias WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+            comando.Connection.Close();
+            DataRow linha = tabela.Rows[0];
+            Categoria categoria = new Categoria();
+            categoria.Id = Convert.ToInt32(linha["id"]);
+            categoria.Nome = linha["nome"].ToString();
+
+            return categoria;
+
+        }
+
     }
 }
