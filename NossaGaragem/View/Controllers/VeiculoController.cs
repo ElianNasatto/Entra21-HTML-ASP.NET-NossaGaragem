@@ -49,5 +49,28 @@ namespace View.Controllers
             repository.Deletar(id);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Atualizar(int id)
+        {
+            Veiculo veiculo = repository.ObterPeloId(id);
+            @ViewBag.Veiculo = veiculo;
+
+            CategoriaRepository categoriaRepository = new CategoriaRepository();
+            List<Categoria> lista = categoriaRepository.ObterTodos();
+            @ViewBag.Categoria = lista;
+            return View();
+        }
+
+        public ActionResult Update(int id, string modelo, decimal valor, int categoria)
+        {
+            Veiculo veiculo = new Veiculo();
+            veiculo.Id = id;
+            veiculo.Modelo = modelo;
+            veiculo.Valor = valor;
+            veiculo.Categoria = new Categoria();
+            veiculo.Categoria.Id = categoria;
+            repository.Atualizar(veiculo);
+            return RedirectToAction("Index");
+        }
     }
 }

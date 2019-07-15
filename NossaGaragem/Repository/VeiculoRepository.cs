@@ -68,9 +68,43 @@ namespace Repository
         {
             SqlCommand comando = Conexao.Conectar();
             comando.CommandText = @"SELECT
-                                    veiculos.modelo AS 'Modelo'
-FROM veiculos WHERE id = ";
-            return null;
+                                    veiculos.id AS 'id',
+                                    veiculos.modelo AS 'modelo',
+                                    veiculos.valor AS 'valor',
+                                    veiculos.id_categoria AS 'idcategoria',
+                                    categorias.Nome AS 'categoria'
+                                    FROM veiculos INNER JOIN categorias ON (veiculos.id_categoria = categorias.id)
+                                    WHERE veiculos.id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+            comando.Connection.Close();
+            DataRow linha = tabela.Rows[0];
+            Veiculo veiculo = new Veiculo();
+            veiculo.Id = Convert.ToInt32(linha["id"]);
+            veiculo.Modelo = linha["modelo"].ToString();
+            veiculo.Valor = Convert.ToDecimal(linha["valor"]);
+            veiculo.IdCategoria = Convert.ToInt32(linha["idcategoria"]);
+            veiculo.Categoria = new Categoria();
+            veiculo.Categoria.Nome = linha["categoria"].ToString();
+            return veiculo;
+        }
+
+        public void Atualizar(Veiculo veiculo)
+        {
+            SqlCommand comando = Conexao.Conectar();
+            comando.CommandText = @"UPDATE veiculos SET 
+                                    modelo = @MODELO, 
+                                    id_categoria = @ID_CATEGORIA, 
+                                    valor = @VALOR
+                                    WHERE veiculos.id = @ID";
+            comando.Parameters.AddWithValue("@ID", veiculo.Id);
+            comando.Parameters.AddWithValue("@MODELO", veiculo.Modelo);
+            comando.Parameters.AddWithValue("@VALOR", veiculo.Valor);
+            comando.Parameters.AddWithValue("@ID_CATEGORIA", veiculo.Categoria.Id);
+            comando.ExecuteNonQuery();
+            comando.Connection.Close();
+
         }
     }
 }

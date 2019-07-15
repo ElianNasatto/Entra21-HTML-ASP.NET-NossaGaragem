@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Atualizar";
+}
+
+<h2>Atualizar</h2>
+
+<form action="/veiculo/update" method="post">
+    <div>
+        <label for="campo-modelo">Modelo</label>
+        <input type="text" value="@ViewBag.Veiculo.Modelo" name="modelo"/>
+    </div>
+    <div>
+        <label for="campo-valor">Valor</label>
+        <input type="text" value="@ViewBag.Veiculo.Valor" name="valor"/>
+    </div>
+
+    <div>
+        <label for="campo-categoria">Categoria</label>
+        <select name="categoria">
+            <option disabled="disabled" selected="selected">Selecione uma categoria</option>
+
+            @foreach (Model.Categoria categoria in ViewBag.Categoria)
+            {
+                if (categoria.Id == ViewBag.Veiculo.IdCategoria)
+                {
+                    <option value="@categoria.Id" selected="selected">@categoria.Nome</option>
+                }
+                else
+                {
+                    <option value="@categoria.Id">@categoria.Nome</option>
+                }
+            }
+        </select>
+    </div>
+    <input type="text" hidden="hidden" value="@ViewBag.Veiculo.Id" name="id"/>
+    <button type="submit">Salvar</button>
+</form>
